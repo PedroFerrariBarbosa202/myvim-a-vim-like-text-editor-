@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/myvim.dir/src/main.c.o CMakeFiles/myvim.dir/src/buffer.c.o CMakeFiles/myvim.dir/src/screen.c.o CMakeFiles/myvim.dir/src/terminal.c.o CMakeFiles/myvim.dir/src/modes.c.o CMakeFiles/myvim.dir/src/commands.c.o CMakeFiles/myvim.dir/src/file_manager.c.o -o myvim 

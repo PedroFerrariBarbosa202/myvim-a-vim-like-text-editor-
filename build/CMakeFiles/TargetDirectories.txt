@@ -1,0 +1,3 @@
+/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles/myvim.dir
+/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles/edit_cache.dir
+/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles/rebuild_cache.dir
