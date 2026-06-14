@@ -54,4 +54,5 @@ CMakeFiles/myvim.dir/src/commands.c.o: \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/terminal.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/file_manager.h \
- /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/windows.h

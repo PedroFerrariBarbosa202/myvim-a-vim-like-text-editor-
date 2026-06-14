@@ -1,6 +1,6 @@
-CMakeFiles/myvim.dir/src/buffer.c.o: \
- /home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c /usr/include/stdc-predef.h \
- /usr/include/stdlib.h \
+CMakeFiles/myvim.dir/src/windows.c.o: \
+ /home/pedrofb/Desktop/Cs/C/myvim/src/windows.c \
+ /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -39,16 +39,7 @@ CMakeFiles/myvim.dir/src/buffer.c.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /usr/include/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -58,8 +49,6 @@ CMakeFiles/myvim.dir/src/buffer.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /home/pedrofb/Desktop/Cs/C/myvim/includes/terminal.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/screen.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
- /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
- /home/pedrofb/Desktop/Cs/C/myvim/includes/windows.h
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h

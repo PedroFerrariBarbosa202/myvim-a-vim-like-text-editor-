@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pedrofb/Desktop/Cs/C/myvim/src/modes.c" "CMakeFiles/myvim.dir/src/modes.c.o" "gcc" "CMakeFiles/myvim.dir/src/modes.c.o.d"
   "/home/pedrofb/Desktop/Cs/C/myvim/src/screen.c" "CMakeFiles/myvim.dir/src/screen.c.o" "gcc" "CMakeFiles/myvim.dir/src/screen.c.o.d"
   "/home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c" "CMakeFiles/myvim.dir/src/terminal.c.o" "gcc" "CMakeFiles/myvim.dir/src/terminal.c.o.d"
+  "/home/pedrofb/Desktop/Cs/C/myvim/src/windows.c" "CMakeFiles/myvim.dir/src/windows.c.o" "gcc" "CMakeFiles/myvim.dir/src/windows.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

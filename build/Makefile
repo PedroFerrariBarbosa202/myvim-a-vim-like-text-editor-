@@ -297,6 +297,30 @@ src/terminal.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/terminal.c.s
 .PHONY : src/terminal.c.s
 
+src/windows.o: src/windows.c.o
+.PHONY : src/windows.o
+
+# target to build an object file
+src/windows.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/windows.c.o
+.PHONY : src/windows.c.o
+
+src/windows.i: src/windows.c.i
+.PHONY : src/windows.i
+
+# target to preprocess a source file
+src/windows.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/windows.c.i
+.PHONY : src/windows.c.i
+
+src/windows.s: src/windows.c.s
+.PHONY : src/windows.s
+
+# target to generate assembly for a file
+src/windows.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/windows.c.s
+.PHONY : src/windows.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -327,6 +351,9 @@ help:
 	@echo "... src/terminal.o"
 	@echo "... src/terminal.i"
 	@echo "... src/terminal.s"
+	@echo "... src/windows.o"
+	@echo "... src/windows.i"
+	@echo "... src/windows.s"
 .PHONY : help
 
 

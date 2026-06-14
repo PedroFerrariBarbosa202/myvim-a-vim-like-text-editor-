@@ -10,33 +10,24 @@
 #include "modes.h"
 #include "file_manager.h"
 #include "editor_types.h"
+#include "windows.h"
 
 editor_ctx edt_ctx = {
-  .cx = 1,
-  .cy = 1,
-
-  .saved_cx = 1,
-  .saved_cy = 1,
-
-  .rows = NULL,
-  .numrows = 0,
-
-  .x_offset = 7,
-  .y_offset = 0,
+  .commd_row_cx = 1,
 
   .curr_opm = NORMAL,
-
-  .curr_dir = NULL,
-  .curr_file = NULL,
-  .file_modified = 0,
-
+  .windows = NULL,
+  .num_windows = 0,
+  .curr_window = 0,
   .clipboard = NULL,
 };
 
 int main(int argc, char *argv[]){
+  enableRawMode();
   atexit(disableRawMode);
 
-  reset_screen();
+  reset_screen(&edt_ctx);
+  create_window(&edt_ctx);
 
   // check if user wants to open a file with argvs
   if(argc > 1) load_buffers_from_file(&edt_ctx, argv[1]);
@@ -44,19 +35,17 @@ int main(int argc, char *argv[]){
   while(1){
     render_screen(&edt_ctx);
     char key = readKey();
-    
+
     // change mode if ESCAPE is pressed
     if (key == '\x1b') {
       // reset mouse to saved cx/cy postions
       if(edt_ctx.curr_opm == COMMAND) {
         edt_ctx.commd_row.buff = NULL;
-
-        edt_ctx.cx = edt_ctx.saved_cx;
-        edt_ctx.cy = edt_ctx.saved_cy;
       }
-      
+      edt_ctx.commd_row_cx = 1;
+
       // change mode
-      edt_ctx.curr_opm = (edt_ctx.curr_opm == NORMAL ? INSERT : NORMAL);
+      edt_ctx.curr_opm = NORMAL;
       continue;
     }
   
@@ -64,13 +53,19 @@ int main(int argc, char *argv[]){
     else if(edt_ctx.curr_opm == INSERT) handle_insert_mode(&edt_ctx, key);
     else if(edt_ctx.curr_opm == COMMAND) handle_command_mode(&edt_ctx, key);
 
-    // clamp mouse value
-    int curr_line_len = edt_ctx.rows[edt_ctx.cy + edt_ctx.y_offset - 1].size;
+    // clamp cx and cy values relative to screen    
+    window_t *curr_window = &(edt_ctx.windows[edt_ctx.curr_window]);
 
-    if(edt_ctx.cx < 1) edt_ctx.cx = 1;
-    if(edt_ctx.cx > curr_line_len + 1 && edt_ctx.curr_opm != COMMAND) edt_ctx.cx = curr_line_len + 1;
-    if(edt_ctx.cy < 1) edt_ctx.cy = 1;
-    if(edt_ctx.cy > get_win_height() - 2) edt_ctx.cy = get_win_height() - 2;
+    int filerow = curr_window->cy + curr_window->y_offset - 1;
+    int curr_line_len = 0;
+
+    if(filerow >= 0 && filerow < curr_window->numrows && curr_window->rows != NULL)
+      curr_line_len = curr_window->rows[filerow].size;
+
+    if(curr_window->cx < 1) curr_window->cx = 1;
+    if(curr_window->cx > curr_line_len + 1 && edt_ctx.curr_opm != COMMAND) curr_window->cx = curr_line_len + 1;
+    if(curr_window->cy < 1) curr_window->cy = 1;
+    if(curr_window->cy > get_win_height() - 2) curr_window->cy = get_win_height() - 2;
   }
 
   return 0;

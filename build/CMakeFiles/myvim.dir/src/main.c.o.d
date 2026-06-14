@@ -76,4 +76,5 @@ CMakeFiles/myvim.dir/src/main.c.o: \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/modes.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/file_manager.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
- /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/windows.h

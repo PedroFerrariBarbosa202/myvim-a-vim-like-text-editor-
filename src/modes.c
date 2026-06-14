@@ -6,37 +6,43 @@
 #include "editor_types.h"
 #include "terminal.h"
 #include "commands.h"
+#include "windows.h"
 
 void handle_normal_mode(editor_ctx *edt_ctx, char key){
-  if(key == 'h') edt_ctx->cx--;
-  else if(key == 'l') edt_ctx->cx++;
+  window_t *curr_window = &(edt_ctx->windows[edt_ctx->curr_window]);
+
+  if(key == 'h') curr_window->cx--;
+  else if(key == 'l') curr_window->cx++;
 
   else if(key == 'k') {
     // roll screen up when reaching upper border
-    if(edt_ctx->cy <= 1 && edt_ctx->y_offset != 0) roll_screen(edt_ctx, -1);
-    else edt_ctx->cy--;
+    if(curr_window->cy <= 1 && curr_window->y_offset != 0) roll_screen(edt_ctx, -1);
+    else curr_window->cy--;
 
-    if(edt_ctx->cy < 1) edt_ctx->cy = 1;
+    if(curr_window->cy < 1) curr_window->cy = 1;
   }
 
   // if loking into a new line, create it on memory
   else if(key == 'j') { 
     // roll everything down to show lower part of screen
-    if(edt_ctx->cy > get_win_height() - 3) roll_screen(edt_ctx, 1);
-    else edt_ctx->cy++;
+    if(curr_window->cy > get_win_height() - 3) roll_screen(edt_ctx, 1);
+    else curr_window->cy++;
 
-    if(edt_ctx->cy > edt_ctx->numrows)
+    if(curr_window->cy > curr_window->numrows)
       create_new_erow(edt_ctx);
+  }
+
+  else if(key == 'n'){
+    edt_ctx->curr_window++;
+    if(edt_ctx->curr_window >= edt_ctx->num_windows) edt_ctx->curr_window = 0;
+    change_window(edt_ctx, edt_ctx->curr_window);
   }
 
   // if user press ':', switch into command mode
   else if(key == ':') {
-    edt_ctx->saved_cx = edt_ctx->cx;
-    edt_ctx->saved_cy = edt_ctx->cy;
-
     edt_ctx->curr_opm = COMMAND;
 
-    edt_ctx->cx = 1;
+    curr_window->cx = 1;
 
     edt_ctx->commd_row.buff = NULL;
     edt_ctx->commd_row.size = 0;
@@ -45,33 +51,35 @@ void handle_normal_mode(editor_ctx *edt_ctx, char key){
   }
   
   // CTRL+C
-  if(key == 'y')copy_line(edt_ctx, edt_ctx->cy + edt_ctx->y_offset);
+  if(key == 'y')copy_line(edt_ctx, curr_window->cy + curr_window->y_offset);
 
   // CTRL+V
-  if(key == 'p')paste_line(edt_ctx, edt_ctx->cy + edt_ctx->y_offset, edt_ctx->cx);
+  if(key == 'p')paste_line(edt_ctx, curr_window->cy + curr_window->y_offset, curr_window->cx);
   
   // delete line logic
-  if(key == 'd') delete_erow_buffer(edt_ctx, edt_ctx->cy + edt_ctx->y_offset);
+  if(key == 'd') delete_erow_buffer(edt_ctx, curr_window->cy + curr_window->y_offset);
 
   // 'o' and 'i' key logic
-  else if(key == 'i') edt_ctx->cx;
-  else if(key == 'o' ) edt_ctx->cx = edt_ctx->rows[edt_ctx->cy + edt_ctx->y_offset - 1].size + 1;
+  else if(key == 'i') edt_ctx->curr_opm = INSERT;
+  else if(key == 'o' ) curr_window->cx = curr_window->rows[curr_window->cy + curr_window->y_offset - 1].size + 1;
 }
 
 void handle_insert_mode(editor_ctx *edt_ctx, char key){
+  window_t *curr_window = &(edt_ctx->windows[edt_ctx->curr_window]);
+
   // DELETE key logic
   if(key == 127){
     // normal delete inside line
     if(delete_erow_char(edt_ctx) == 0){
-        edt_ctx->cx--;
+        curr_window->cx--;
     }
     // backspace at beginning of line
-    else if(edt_ctx->cy > 1 || edt_ctx->y_offset > 0){
-        int curr_filerow = edt_ctx->cy + edt_ctx->y_offset - 1;
+    else if(curr_window->cy > 1 || curr_window->y_offset > 0){
+        int curr_filerow = curr_window->cy + curr_window->y_offset - 1;
         int prev_filerow = curr_filerow - 1;
 
-        erow *curr = &edt_ctx->rows[curr_filerow];
-        erow *prev = &edt_ctx->rows[prev_filerow];
+        erow *curr = &curr_window->rows[curr_filerow];
+        erow *prev = &curr_window->rows[prev_filerow];
 
         int prev_size = prev->size;
 
@@ -83,60 +91,59 @@ void handle_insert_mode(editor_ctx *edt_ctx, char key){
         roll_up_buffers(edt_ctx, curr_filerow);
 
         // move cursor
-        if(edt_ctx->cy == 1 && edt_ctx->y_offset > 0){
+        if(curr_window->cy == 1 && curr_window->y_offset > 0){
             roll_screen(edt_ctx, -1);
         } else {
-            edt_ctx->cy--;
+            curr_window->cy--;
         }
 
-        edt_ctx->cx = prev_size + 1;
+        curr_window->cx = prev_size + 1;
     }
   }
   
   // ENTER key logic
   else if(key == '\r' || key == '\n'){
-    slice_and_down_buffer(edt_ctx, edt_ctx->cy);
+    slice_and_down_buffer(edt_ctx, curr_window->cy);
 
-    edt_ctx->cy++;
-    edt_ctx->cx = 1;
+    curr_window->cy++;
+    curr_window->cx = 1;
 
     // roll window when reaching lower border
-    if(edt_ctx->cy > get_win_height() - 2) {
+    if(curr_window->cy > get_win_height() - 2) {
       roll_screen(edt_ctx, 1);
-      edt_ctx->cy--;
+      curr_window->cy--;
     }
   }
 
   else{
-    erow *row = &(edt_ctx->rows[edt_ctx->cy + edt_ctx->y_offset - 1]);
+    erow *row = &(curr_window->rows[curr_window->cy + curr_window->y_offset - 1]);
     char str[2] = { key, '\0' };
-    append_str_erow(edt_ctx, row, str, edt_ctx->cx - 1);
-    edt_ctx->cx++;
+    append_str_erow(edt_ctx, row, str, curr_window->cx - 1);
+    curr_window->cx++;
   }
 }
 
 void handle_command_mode(editor_ctx *edt_ctx, char key){
+  window_t *curr_window = &(edt_ctx->windows[edt_ctx->curr_window]);
+
   // DELETE key logic
   if(key == 127) {
     if(delete_char_commd_erow(edt_ctx) == 0)
-      edt_ctx->cx--;
+      edt_ctx->commd_row_cx--;
   }
   // ENTER key logic
   else if(key == '\r' || key == '\n'){
-    edt_ctx->cx = edt_ctx->saved_cx;
-    edt_ctx->cy = edt_ctx->saved_cy;
-
     // execute command
     exec_command(edt_ctx, edt_ctx->commd_row.buff);
   
     // clean command row
     edt_ctx->commd_row.buff = NULL;
- 
+    edt_ctx->commd_row_cx = 1;
     edt_ctx->curr_opm = NORMAL;
     return;
   }
   else{
     insert_char_commd_erow(edt_ctx, key);
-    edt_ctx->cx++;
+    edt_ctx->commd_row_cx++;
   }
 }

@@ -73,99 +73,113 @@ CMakeFiles/myvim.dir/src/main.c.o: CMakeFiles/myvim.dir/flags.make
 CMakeFiles/myvim.dir/src/main.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/main.c
 CMakeFiles/myvim.dir/src/main.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myvim.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/main.c.o -MF CMakeFiles/myvim.dir/src/main.c.o.d -o CMakeFiles/myvim.dir/src/main.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/main.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/main.c.o -MF CMakeFiles/myvim.dir/src/main.c.o.d -o CMakeFiles/myvim.dir/src/main.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/main.c
 
 CMakeFiles/myvim.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/main.c > CMakeFiles/myvim.dir/src/main.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/main.c > CMakeFiles/myvim.dir/src/main.c.i
 
 CMakeFiles/myvim.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/main.c -o CMakeFiles/myvim.dir/src/main.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/main.c -o CMakeFiles/myvim.dir/src/main.c.s
 
 CMakeFiles/myvim.dir/src/buffer.c.o: CMakeFiles/myvim.dir/flags.make
 CMakeFiles/myvim.dir/src/buffer.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c
 CMakeFiles/myvim.dir/src/buffer.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/myvim.dir/src/buffer.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/buffer.c.o -MF CMakeFiles/myvim.dir/src/buffer.c.o.d -o CMakeFiles/myvim.dir/src/buffer.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/buffer.c.o -MF CMakeFiles/myvim.dir/src/buffer.c.o.d -o CMakeFiles/myvim.dir/src/buffer.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c
 
 CMakeFiles/myvim.dir/src/buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/buffer.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c > CMakeFiles/myvim.dir/src/buffer.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c > CMakeFiles/myvim.dir/src/buffer.c.i
 
 CMakeFiles/myvim.dir/src/buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/buffer.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c -o CMakeFiles/myvim.dir/src/buffer.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c -o CMakeFiles/myvim.dir/src/buffer.c.s
 
 CMakeFiles/myvim.dir/src/screen.c.o: CMakeFiles/myvim.dir/flags.make
 CMakeFiles/myvim.dir/src/screen.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/screen.c
 CMakeFiles/myvim.dir/src/screen.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/myvim.dir/src/screen.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/screen.c.o -MF CMakeFiles/myvim.dir/src/screen.c.o.d -o CMakeFiles/myvim.dir/src/screen.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/screen.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/screen.c.o -MF CMakeFiles/myvim.dir/src/screen.c.o.d -o CMakeFiles/myvim.dir/src/screen.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/screen.c
 
 CMakeFiles/myvim.dir/src/screen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/screen.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/screen.c > CMakeFiles/myvim.dir/src/screen.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/screen.c > CMakeFiles/myvim.dir/src/screen.c.i
 
 CMakeFiles/myvim.dir/src/screen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/screen.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/screen.c -o CMakeFiles/myvim.dir/src/screen.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/screen.c -o CMakeFiles/myvim.dir/src/screen.c.s
 
 CMakeFiles/myvim.dir/src/terminal.c.o: CMakeFiles/myvim.dir/flags.make
 CMakeFiles/myvim.dir/src/terminal.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c
 CMakeFiles/myvim.dir/src/terminal.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/myvim.dir/src/terminal.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/terminal.c.o -MF CMakeFiles/myvim.dir/src/terminal.c.o.d -o CMakeFiles/myvim.dir/src/terminal.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/terminal.c.o -MF CMakeFiles/myvim.dir/src/terminal.c.o.d -o CMakeFiles/myvim.dir/src/terminal.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c
 
 CMakeFiles/myvim.dir/src/terminal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/terminal.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c > CMakeFiles/myvim.dir/src/terminal.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c > CMakeFiles/myvim.dir/src/terminal.c.i
 
 CMakeFiles/myvim.dir/src/terminal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/terminal.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c -o CMakeFiles/myvim.dir/src/terminal.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c -o CMakeFiles/myvim.dir/src/terminal.c.s
 
 CMakeFiles/myvim.dir/src/modes.c.o: CMakeFiles/myvim.dir/flags.make
 CMakeFiles/myvim.dir/src/modes.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/modes.c
 CMakeFiles/myvim.dir/src/modes.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/myvim.dir/src/modes.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/modes.c.o -MF CMakeFiles/myvim.dir/src/modes.c.o.d -o CMakeFiles/myvim.dir/src/modes.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/modes.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/modes.c.o -MF CMakeFiles/myvim.dir/src/modes.c.o.d -o CMakeFiles/myvim.dir/src/modes.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/modes.c
 
 CMakeFiles/myvim.dir/src/modes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/modes.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/modes.c > CMakeFiles/myvim.dir/src/modes.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/modes.c > CMakeFiles/myvim.dir/src/modes.c.i
 
 CMakeFiles/myvim.dir/src/modes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/modes.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/modes.c -o CMakeFiles/myvim.dir/src/modes.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/modes.c -o CMakeFiles/myvim.dir/src/modes.c.s
 
 CMakeFiles/myvim.dir/src/commands.c.o: CMakeFiles/myvim.dir/flags.make
 CMakeFiles/myvim.dir/src/commands.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/commands.c
 CMakeFiles/myvim.dir/src/commands.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/myvim.dir/src/commands.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/commands.c.o -MF CMakeFiles/myvim.dir/src/commands.c.o.d -o CMakeFiles/myvim.dir/src/commands.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/commands.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/commands.c.o -MF CMakeFiles/myvim.dir/src/commands.c.o.d -o CMakeFiles/myvim.dir/src/commands.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/commands.c
 
 CMakeFiles/myvim.dir/src/commands.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/commands.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/commands.c > CMakeFiles/myvim.dir/src/commands.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/commands.c > CMakeFiles/myvim.dir/src/commands.c.i
 
 CMakeFiles/myvim.dir/src/commands.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/commands.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/commands.c -o CMakeFiles/myvim.dir/src/commands.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/commands.c -o CMakeFiles/myvim.dir/src/commands.c.s
 
 CMakeFiles/myvim.dir/src/file_manager.c.o: CMakeFiles/myvim.dir/flags.make
 CMakeFiles/myvim.dir/src/file_manager.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/file_manager.c
 CMakeFiles/myvim.dir/src/file_manager.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/myvim.dir/src/file_manager.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/file_manager.c.o -MF CMakeFiles/myvim.dir/src/file_manager.c.o.d -o CMakeFiles/myvim.dir/src/file_manager.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/file_manager.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/file_manager.c.o -MF CMakeFiles/myvim.dir/src/file_manager.c.o.d -o CMakeFiles/myvim.dir/src/file_manager.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/file_manager.c
 
 CMakeFiles/myvim.dir/src/file_manager.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/file_manager.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/file_manager.c > CMakeFiles/myvim.dir/src/file_manager.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/file_manager.c > CMakeFiles/myvim.dir/src/file_manager.c.i
 
 CMakeFiles/myvim.dir/src/file_manager.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/file_manager.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/file_manager.c -o CMakeFiles/myvim.dir/src/file_manager.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/file_manager.c -o CMakeFiles/myvim.dir/src/file_manager.c.s
+
+CMakeFiles/myvim.dir/src/windows.c.o: CMakeFiles/myvim.dir/flags.make
+CMakeFiles/myvim.dir/src/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/windows.c
+CMakeFiles/myvim.dir/src/windows.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/myvim.dir/src/windows.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/windows.c.o -MF CMakeFiles/myvim.dir/src/windows.c.o.d -o CMakeFiles/myvim.dir/src/windows.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/windows.c
+
+CMakeFiles/myvim.dir/src/windows.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/windows.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/windows.c > CMakeFiles/myvim.dir/src/windows.c.i
+
+CMakeFiles/myvim.dir/src/windows.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/windows.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/windows.c -o CMakeFiles/myvim.dir/src/windows.c.s
 
 # Object files for target myvim
 myvim_OBJECTS = \
@@ -175,7 +189,8 @@ myvim_OBJECTS = \
 "CMakeFiles/myvim.dir/src/terminal.c.o" \
 "CMakeFiles/myvim.dir/src/modes.c.o" \
 "CMakeFiles/myvim.dir/src/commands.c.o" \
-"CMakeFiles/myvim.dir/src/file_manager.c.o"
+"CMakeFiles/myvim.dir/src/file_manager.c.o" \
+"CMakeFiles/myvim.dir/src/windows.c.o"
 
 # External object files for target myvim
 myvim_EXTERNAL_OBJECTS =
@@ -187,9 +202,10 @@ myvim: CMakeFiles/myvim.dir/src/terminal.c.o
 myvim: CMakeFiles/myvim.dir/src/modes.c.o
 myvim: CMakeFiles/myvim.dir/src/commands.c.o
 myvim: CMakeFiles/myvim.dir/src/file_manager.c.o
+myvim: CMakeFiles/myvim.dir/src/windows.c.o
 myvim: CMakeFiles/myvim.dir/build.make
 myvim: CMakeFiles/myvim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable myvim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable myvim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myvim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

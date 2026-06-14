@@ -10,6 +10,7 @@ add_executable(myvim
     src/modes.c
     src/commands.c
     src/file_manager.c
+    src/windows.c
 )
 
 target_include_directories(myvim PRIVATE includes)

@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/myvim.dir/src/screen.c.o.d"
   "CMakeFiles/myvim.dir/src/terminal.c.o"
   "CMakeFiles/myvim.dir/src/terminal.c.o.d"
+  "CMakeFiles/myvim.dir/src/windows.c.o"
+  "CMakeFiles/myvim.dir/src/windows.c.o.d"
   "myvim"
   "myvim.pdb"
 )

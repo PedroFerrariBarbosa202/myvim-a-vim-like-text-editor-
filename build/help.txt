@@ -1,0 +1,9 @@
+This page gives a simple description of the commands offered by this software:
+
+l [n] -> go to absolute line n
+f [buff] -> open a file with name 'buff' within the current directory
+sq -> saves the current file and quit
+s -> save the current file
+dir [buff] -> sets the current directory of a window
+w [n] -> opens n new windows
+help -> opens this page :)

@@ -41,3 +41,12 @@ int get_win_height(){
   return sz.ws_row;
 }
 
+int get_win_width(){
+  struct winsize sz;
+
+  if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &sz) == -1) {
+      return 1;
+  }
+
+  return sz.ws_col;
+}
