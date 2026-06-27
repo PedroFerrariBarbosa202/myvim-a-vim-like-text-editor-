@@ -53,6 +53,7 @@ CMakeFiles/myvim.dir/src/control/command_mode.c.o: /home/pedrofb/Desktop/Cs/C/my
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -64,6 +65,9 @@ CMakeFiles/myvim.dir/src/control/command_mode.c.o: /home/pedrofb/Desktop/Cs/C/my
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -77,17 +81,20 @@ CMakeFiles/myvim.dir/src/control/command_mode.c.o: /home/pedrofb/Desktop/Cs/C/my
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/myvim.dir/src/control/commands.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/control/commands.c \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/file_manager.h \
+  /home/pedrofb/Desktop/Cs/C/myvim/includes/render_config.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/screen.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/terminal.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/windows.h \
@@ -96,6 +103,7 @@ CMakeFiles/myvim.dir/src/control/commands.c.o: /home/pedrofb/Desktop/Cs/C/myvim/
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/string.h \
@@ -118,6 +126,8 @@ CMakeFiles/myvim.dir/src/control/commands.c.o: /home/pedrofb/Desktop/Cs/C/myvim/
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -148,6 +158,7 @@ CMakeFiles/myvim.dir/src/control/commands.c.o: /home/pedrofb/Desktop/Cs/C/myvim/
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -155,7 +166,8 @@ CMakeFiles/myvim.dir/src/control/commands.c.o: /home/pedrofb/Desktop/Cs/C/myvim/
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/myvim.dir/src/control/insert_mode.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/control/insert_mode.c \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
@@ -167,6 +179,7 @@ CMakeFiles/myvim.dir/src/control/insert_mode.c.o: /home/pedrofb/Desktop/Cs/C/myv
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -178,6 +191,9 @@ CMakeFiles/myvim.dir/src/control/insert_mode.c.o: /home/pedrofb/Desktop/Cs/C/myv
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -191,12 +207,14 @@ CMakeFiles/myvim.dir/src/control/insert_mode.c.o: /home/pedrofb/Desktop/Cs/C/myv
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/myvim.dir/src/control/normal_mode.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/control/normal_mode.c \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
@@ -208,6 +226,7 @@ CMakeFiles/myvim.dir/src/control/normal_mode.c.o: /home/pedrofb/Desktop/Cs/C/myv
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -219,6 +238,9 @@ CMakeFiles/myvim.dir/src/control/normal_mode.c.o: /home/pedrofb/Desktop/Cs/C/myv
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -232,12 +254,14 @@ CMakeFiles/myvim.dir/src/control/normal_mode.c.o: /home/pedrofb/Desktop/Cs/C/myv
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/myvim.dir/src/files/file_manager.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/files/file_manager.c \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
@@ -250,6 +274,7 @@ CMakeFiles/myvim.dir/src/files/file_manager.c.o: /home/pedrofb/Desktop/Cs/C/myvi
   /usr/include/limits.h \
   /usr/include/linux/limits.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/string.h \
@@ -277,6 +302,8 @@ CMakeFiles/myvim.dir/src/files/file_manager.c.o: /home/pedrofb/Desktop/Cs/C/myvi
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -307,6 +334,7 @@ CMakeFiles/myvim.dir/src/files/file_manager.c.o: /home/pedrofb/Desktop/Cs/C/myvi
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -316,6 +344,7 @@ CMakeFiles/myvim.dir/src/files/file_manager.c.o: /home/pedrofb/Desktop/Cs/C/myvi
   /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/myvim.dir/src/main.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/main.c \
@@ -325,6 +354,7 @@ CMakeFiles/myvim.dir/src/main.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/main.c \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/file_manager.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/insert_mode.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/normal_mode.h \
+  /home/pedrofb/Desktop/Cs/C/myvim/includes/render_config.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/screen.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/terminal.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/windows.h \
@@ -333,6 +363,7 @@ CMakeFiles/myvim.dir/src/main.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/main.c \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/string.h \
@@ -356,6 +387,8 @@ CMakeFiles/myvim.dir/src/main.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/main.c \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -396,6 +429,7 @@ CMakeFiles/myvim.dir/src/main.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/main.c \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -404,17 +438,44 @@ CMakeFiles/myvim.dir/src/main.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/main.c \
   /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+
+CMakeFiles/myvim.dir/src/render/render_config.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/render/render_config.c \
+  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
+  /home/pedrofb/Desktop/Cs/C/myvim/includes/render_config.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/myvim.dir/src/render/screen.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/render/screen.c \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
+  /home/pedrofb/Desktop/Cs/C/myvim/includes/macros.h \
+  /home/pedrofb/Desktop/Cs/C/myvim/includes/render_config.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/terminal.h \
   /usr/include/alloca.h \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/string.h \
@@ -437,6 +498,8 @@ CMakeFiles/myvim.dir/src/render/screen.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -467,6 +530,7 @@ CMakeFiles/myvim.dir/src/render/screen.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -474,7 +538,8 @@ CMakeFiles/myvim.dir/src/render/screen.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/buffer.c \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
@@ -486,6 +551,7 @@ CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o: /home/pedrofb/Desktop/Cs/C/myvi
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/string.h \
@@ -508,6 +574,8 @@ CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o: /home/pedrofb/Desktop/Cs/C/myvi
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -538,6 +606,7 @@ CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o: /home/pedrofb/Desktop/Cs/C/myvi
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -545,18 +614,61 @@ CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o: /home/pedrofb/Desktop/Cs/C/myvi
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+
+CMakeFiles/myvim.dir/src/text_buffer/macros.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/macros.c \
+  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
+  /home/pedrofb/Desktop/Cs/C/myvim/includes/macros.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/windows/windows.c \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/file_manager.h \
+  /home/pedrofb/Desktop/Cs/C/myvim/includes/render_config.h \
   /home/pedrofb/Desktop/Cs/C/myvim/includes/screen.h \
   /usr/include/alloca.h \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
@@ -571,6 +683,8 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -598,6 +712,7 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -605,8 +720,13 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
+
+/home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/macros.c:
+
+/home/pedrofb/Desktop/Cs/C/myvim/includes/macros.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
 
@@ -642,13 +762,7 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
 /usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/limits.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -666,13 +780,33 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
 
 /usr/include/endian.h:
 
+/usr/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/home/pedrofb/Desktop/Cs/C/myvim/includes/render_config.h:
+
 /home/pedrofb/Desktop/Cs/C/myvim/includes/file_manager.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h:
 
@@ -742,8 +876,6 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
 
 /usr/include/features-time64.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
@@ -762,9 +894,9 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
 /usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/termios-baud.h:
 
@@ -775,6 +907,8 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /home/pedrofb/Desktop/Cs/C/myvim/includes/terminal.h:
+
+/usr/include/stdint.h:
 
 /home/pedrofb/Desktop/Cs/C/myvim/src/render/screen.c:
 
@@ -796,6 +930,8 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/home/pedrofb/Desktop/Cs/C/myvim/src/render/render_config.c:
+
 /home/pedrofb/Desktop/Cs/C/myvim/includes/screen.h:
 
 /usr/include/linux/ioctl.h:
@@ -804,7 +940,7 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
 
 /usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /home/pedrofb/Desktop/Cs/C/myvim/src/windows/windows.c:
 
@@ -826,14 +962,12 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: /home/pedrofb/Desktop/Cs/C/myvim/s
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
 /usr/include/linux/limits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:

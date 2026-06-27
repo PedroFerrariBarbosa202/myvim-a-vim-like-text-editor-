@@ -49,8 +49,13 @@ CMakeFiles/myvim.dir/src/windows/windows.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/screen.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/file_manager.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
- /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/render_config.h

@@ -58,5 +58,17 @@
   "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/windows/windows.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/windows/windows.c",
   "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/windows/windows.c",
   "output": "CMakeFiles/myvim.dir/src/windows/windows.c.o"
+},
+{
+  "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/render/render_config.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/render/render_config.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/render/render_config.c",
+  "output": "CMakeFiles/myvim.dir/src/render/render_config.c.o"
+},
+{
+  "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/text_buffer/macros.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/macros.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/macros.c",
+  "output": "CMakeFiles/myvim.dir/src/text_buffer/macros.c.o"
 }
 ]

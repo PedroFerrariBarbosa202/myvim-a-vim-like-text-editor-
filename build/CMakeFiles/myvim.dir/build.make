@@ -209,6 +209,34 @@ CMakeFiles/myvim.dir/src/windows/windows.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/windows/windows.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/windows/windows.c -o CMakeFiles/myvim.dir/src/windows/windows.c.s
 
+CMakeFiles/myvim.dir/src/render/render_config.c.o: CMakeFiles/myvim.dir/flags.make
+CMakeFiles/myvim.dir/src/render/render_config.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/render/render_config.c
+CMakeFiles/myvim.dir/src/render/render_config.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/myvim.dir/src/render/render_config.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/render/render_config.c.o -MF CMakeFiles/myvim.dir/src/render/render_config.c.o.d -o CMakeFiles/myvim.dir/src/render/render_config.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/render/render_config.c
+
+CMakeFiles/myvim.dir/src/render/render_config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/render/render_config.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/render/render_config.c > CMakeFiles/myvim.dir/src/render/render_config.c.i
+
+CMakeFiles/myvim.dir/src/render/render_config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/render/render_config.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/render/render_config.c -o CMakeFiles/myvim.dir/src/render/render_config.c.s
+
+CMakeFiles/myvim.dir/src/text_buffer/macros.c.o: CMakeFiles/myvim.dir/flags.make
+CMakeFiles/myvim.dir/src/text_buffer/macros.c.o: /home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/macros.c
+CMakeFiles/myvim.dir/src/text_buffer/macros.c.o: CMakeFiles/myvim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/myvim.dir/src/text_buffer/macros.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myvim.dir/src/text_buffer/macros.c.o -MF CMakeFiles/myvim.dir/src/text_buffer/macros.c.o.d -o CMakeFiles/myvim.dir/src/text_buffer/macros.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/macros.c
+
+CMakeFiles/myvim.dir/src/text_buffer/macros.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myvim.dir/src/text_buffer/macros.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/macros.c > CMakeFiles/myvim.dir/src/text_buffer/macros.c.i
+
+CMakeFiles/myvim.dir/src/text_buffer/macros.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myvim.dir/src/text_buffer/macros.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/macros.c -o CMakeFiles/myvim.dir/src/text_buffer/macros.c.s
+
 # Object files for target myvim
 myvim_OBJECTS = \
 "CMakeFiles/myvim.dir/src/main.c.o" \
@@ -220,7 +248,9 @@ myvim_OBJECTS = \
 "CMakeFiles/myvim.dir/src/control/command_mode.c.o" \
 "CMakeFiles/myvim.dir/src/control/commands.c.o" \
 "CMakeFiles/myvim.dir/src/files/file_manager.c.o" \
-"CMakeFiles/myvim.dir/src/windows/windows.c.o"
+"CMakeFiles/myvim.dir/src/windows/windows.c.o" \
+"CMakeFiles/myvim.dir/src/render/render_config.c.o" \
+"CMakeFiles/myvim.dir/src/text_buffer/macros.c.o"
 
 # External object files for target myvim
 myvim_EXTERNAL_OBJECTS =
@@ -235,9 +265,11 @@ myvim: CMakeFiles/myvim.dir/src/control/command_mode.c.o
 myvim: CMakeFiles/myvim.dir/src/control/commands.c.o
 myvim: CMakeFiles/myvim.dir/src/files/file_manager.c.o
 myvim: CMakeFiles/myvim.dir/src/windows/windows.c.o
+myvim: CMakeFiles/myvim.dir/src/render/render_config.c.o
+myvim: CMakeFiles/myvim.dir/src/text_buffer/macros.c.o
 myvim: CMakeFiles/myvim.dir/build.make
 myvim: CMakeFiles/myvim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable myvim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pedrofb/Desktop/Cs/C/myvim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable myvim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myvim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

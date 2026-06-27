@@ -61,5 +61,9 @@ CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o: \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/terminal.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/screen.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/windows.h

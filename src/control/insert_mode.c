@@ -70,7 +70,7 @@ void handle_insert_mode(editor_ctx *edt_ctx, int key){
         break;
       case ARROW_DOWN:
         // roll everything down to show lower part of screen
-        if(curr_window->cy > get_win_height() - 3) roll_screen(edt_ctx, 1);
+        if(curr_window->cy > get_win_height() - 4) roll_screen(edt_ctx, 1);
         else curr_window->cy++;
 
         if(curr_window->cy > curr_window->numrows) create_new_erow(edt_ctx);
@@ -84,13 +84,29 @@ void handle_insert_mode(editor_ctx *edt_ctx, int key){
     }
   }
 
-  // special case: when user types '(', it auto fills another ')'
-  else if(key == '(' || key == '{' || key == '"' || key == '\''){
+  // special case: autofill the closing variants of some characters
+  else if(key == '"' || key == '\''){
     erow *row = &(curr_window->rows[curr_window->cy + curr_window->y_offset - 1]);
     char str[3] = { key, key,'\0' };
     append_str_erow(edt_ctx, row, str, curr_window->cx - 1);
     curr_window->cx++;
   }
+
+  else if(key == '{'){
+    erow *row = &(curr_window->rows[curr_window->cy + curr_window->y_offset - 1]);
+    char str[3] = { key, '}','\0' };
+    append_str_erow(edt_ctx, row, str, curr_window->cx - 1);
+    curr_window->cx++;
+  }
+
+  else if(key == '('){
+    erow *row = &(curr_window->rows[curr_window->cy + curr_window->y_offset - 1]);
+    char str[3] = { key, ')','\0' };
+    append_str_erow(edt_ctx, row, str, curr_window->cx - 1);
+    curr_window->cx++;
+  }
+
+
 
   else{
     erow *row = &(curr_window->rows[curr_window->cy + curr_window->y_offset - 1]);

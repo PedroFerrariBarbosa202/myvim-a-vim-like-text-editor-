@@ -13,6 +13,8 @@ add_executable(myvim
     src/control/commands.c
     src/files/file_manager.c
     src/windows/windows.c
+    src/render/render_config.c
+    src/text_buffer/macros.c
 )
 
 target_include_directories(myvim PRIVATE includes)

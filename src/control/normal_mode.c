@@ -25,7 +25,7 @@ void handle_normal_mode(editor_ctx *edt_ctx, int key){
   // if loking into a new line, create it on memory
   else if(key == 'j') { 
     // roll everything down to show lower part of screen
-    if(curr_window->cy > get_win_height() - 3) roll_screen(edt_ctx, 1);
+    if(curr_window->cy > get_win_height() - 4) roll_screen(edt_ctx, 1);
     else curr_window->cy++;
 
     if(curr_window->cy > curr_window->numrows)

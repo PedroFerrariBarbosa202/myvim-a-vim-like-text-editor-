@@ -297,6 +297,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/render/render_config.o: src/render/render_config.c.o
+.PHONY : src/render/render_config.o
+
+# target to build an object file
+src/render/render_config.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/render/render_config.c.o
+.PHONY : src/render/render_config.c.o
+
+src/render/render_config.i: src/render/render_config.c.i
+.PHONY : src/render/render_config.i
+
+# target to preprocess a source file
+src/render/render_config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/render/render_config.c.i
+.PHONY : src/render/render_config.c.i
+
+src/render/render_config.s: src/render/render_config.c.s
+.PHONY : src/render/render_config.s
+
+# target to generate assembly for a file
+src/render/render_config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/render/render_config.c.s
+.PHONY : src/render/render_config.c.s
+
 src/render/screen.o: src/render/screen.c.o
 .PHONY : src/render/screen.o
 
@@ -344,6 +368,30 @@ src/text_buffer/buffer.s: src/text_buffer/buffer.c.s
 src/text_buffer/buffer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/text_buffer/buffer.c.s
 .PHONY : src/text_buffer/buffer.c.s
+
+src/text_buffer/macros.o: src/text_buffer/macros.c.o
+.PHONY : src/text_buffer/macros.o
+
+# target to build an object file
+src/text_buffer/macros.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/text_buffer/macros.c.o
+.PHONY : src/text_buffer/macros.c.o
+
+src/text_buffer/macros.i: src/text_buffer/macros.c.i
+.PHONY : src/text_buffer/macros.i
+
+# target to preprocess a source file
+src/text_buffer/macros.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/text_buffer/macros.c.i
+.PHONY : src/text_buffer/macros.c.i
+
+src/text_buffer/macros.s: src/text_buffer/macros.c.s
+.PHONY : src/text_buffer/macros.s
+
+# target to generate assembly for a file
+src/text_buffer/macros.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/text_buffer/macros.c.s
+.PHONY : src/text_buffer/macros.c.s
 
 src/windows/windows.o: src/windows/windows.c.o
 .PHONY : src/windows/windows.o
@@ -399,12 +447,18 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/render/render_config.o"
+	@echo "... src/render/render_config.i"
+	@echo "... src/render/render_config.s"
 	@echo "... src/render/screen.o"
 	@echo "... src/render/screen.i"
 	@echo "... src/render/screen.s"
 	@echo "... src/text_buffer/buffer.o"
 	@echo "... src/text_buffer/buffer.i"
 	@echo "... src/text_buffer/buffer.s"
+	@echo "... src/text_buffer/macros.o"
+	@echo "... src/text_buffer/macros.i"
+	@echo "... src/text_buffer/macros.s"
 	@echo "... src/windows/windows.o"
 	@echo "... src/windows/windows.i"
 	@echo "... src/windows/windows.s"

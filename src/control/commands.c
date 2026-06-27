@@ -8,6 +8,7 @@
 #include "terminal.h"
 #include "file_manager.h"
 #include "windows.h"
+#include "render_config.h"
 
 char **tokenize_commd(char *commd){
     char **buffer = malloc(sizeof(char*) * 64);
@@ -83,7 +84,7 @@ void exec_command(editor_ctx *edt_ctx, char *commd){
   if(strcmp(buffer[0], "w") == 0){
     int num_lines = (buffer[1] == NULL ? 1 : strtol(buffer[1], NULL, 10));
     for(int i = 0; i < num_lines; i++)
-      create_window(edt_ctx);
+      create_window(edt_ctx, RC_RENDER_ALL);
   }
 
   // quit program
@@ -115,7 +116,10 @@ void exec_command(editor_ctx *edt_ctx, char *commd){
 
     set_current_directory(edt_ctx, get_curr_build_path());
     load_buffers_from_file(edt_ctx, "output.txt");
+
+    // change some window configs
     curr_window->window_id = 1;
+    // set_render_flags(edt_ctx, RC_RENDER_CONTENT);
   }
   
   // open sample projects
@@ -146,6 +150,17 @@ void exec_command(editor_ctx *edt_ctx, char *commd){
 
     // open output window if it exists
     open_window_by_id(edt_ctx, 1);
+  }
+
+  // debug
+  if(strcmp(buffer[0] , "debug") == 0){
+    window_t *curr_window = &(edt_ctx->windows[edt_ctx->curr_window]);
+    printf("%d", curr_window->render_flags);
+  }
+
+  // close window
+  if(strcmp(buffer[0], "cw") == 0){
+    close_window(edt_ctx);
   }
 }
 

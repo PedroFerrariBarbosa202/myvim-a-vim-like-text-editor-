@@ -71,12 +71,17 @@ CMakeFiles/myvim.dir/src/main.c.o: \
  /usr/include/strings.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/screen.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/terminal.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/file_manager.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/windows.h \
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/render_config.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/command_mode.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/normal_mode.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/insert_mode.h

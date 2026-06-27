@@ -10,6 +10,7 @@
 #include "file_manager.h"
 #include "editor_types.h"
 #include "windows.h"
+#include "render_config.h"
 
 #include "command_mode.h"
 #include "normal_mode.h"
@@ -17,7 +18,6 @@
 
 editor_ctx edt_ctx = {
   .commd_row_cx = 1,
-  .abs_x_offset = 0,
 
   .curr_opm = NORMAL,
   .windows = NULL,
@@ -31,7 +31,7 @@ int main(int argc, char *argv[]){
   enableRawMode();
   atexit(disableRawMode);
    
-  create_window(&edt_ctx);
+  create_window(&edt_ctx, RC_RENDER_ALL);
   reset_screen(&edt_ctx);
 
   // check if user wants to open a file with argvs

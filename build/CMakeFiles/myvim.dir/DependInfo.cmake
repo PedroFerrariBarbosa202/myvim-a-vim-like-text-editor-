@@ -15,8 +15,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pedrofb/Desktop/Cs/C/myvim/src/control/normal_mode.c" "CMakeFiles/myvim.dir/src/control/normal_mode.c.o" "gcc" "CMakeFiles/myvim.dir/src/control/normal_mode.c.o.d"
   "/home/pedrofb/Desktop/Cs/C/myvim/src/files/file_manager.c" "CMakeFiles/myvim.dir/src/files/file_manager.c.o" "gcc" "CMakeFiles/myvim.dir/src/files/file_manager.c.o.d"
   "/home/pedrofb/Desktop/Cs/C/myvim/src/main.c" "CMakeFiles/myvim.dir/src/main.c.o" "gcc" "CMakeFiles/myvim.dir/src/main.c.o.d"
+  "/home/pedrofb/Desktop/Cs/C/myvim/src/render/render_config.c" "CMakeFiles/myvim.dir/src/render/render_config.c.o" "gcc" "CMakeFiles/myvim.dir/src/render/render_config.c.o.d"
   "/home/pedrofb/Desktop/Cs/C/myvim/src/render/screen.c" "CMakeFiles/myvim.dir/src/render/screen.c.o" "gcc" "CMakeFiles/myvim.dir/src/render/screen.c.o.d"
   "/home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/buffer.c" "CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o" "gcc" "CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o.d"
+  "/home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/macros.c" "CMakeFiles/myvim.dir/src/text_buffer/macros.c.o" "gcc" "CMakeFiles/myvim.dir/src/text_buffer/macros.c.o.d"
   "/home/pedrofb/Desktop/Cs/C/myvim/src/windows/windows.c" "CMakeFiles/myvim.dir/src/windows/windows.c.o" "gcc" "CMakeFiles/myvim.dir/src/windows/windows.c.o.d"
   )
 

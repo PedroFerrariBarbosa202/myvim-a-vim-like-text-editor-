@@ -1,6 +1,8 @@
 #ifndef EDITOR_TYPES
 #define EDITOR_TYPES
 
+#include <stdint.h>
+
 #define MAX_ROWS 9999
 #define LINE_MAX_SIZE 524
 
@@ -9,21 +11,16 @@
 #define ARROW_LEFT 1002
 #define ARROW_RIGHT 1003
 
-#define RENDER_ALL 0
-#define RENDER_DIRTY_ONLY 1
-
 typedef struct {
   int size;
   char *buff;
 } erow;
-
 
 typedef enum { 
   INSERT,
   NORMAL,
   COMMAND,
 }op_mode;
-
 
 typedef struct{
   int window_id;
@@ -33,10 +30,12 @@ typedef struct{
   int numrows;
   int x_offset;
   int y_offset;
-  int x_padding;
 
   // dirty line tracker
   int dirty_rows[MAX_ROWS + 1];
+
+  // flags to configure rendering 
+  uint8_t render_flags;
 
   // file management logic
   char *curr_dir;
